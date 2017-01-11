@@ -18,29 +18,51 @@
     }
 
     // Regular
-
+    console.log('bruh');
     // Interpolated
-
+    console.log('bruh this is a %s', '💩');
     // Styled
-
+    console.log('%c this is bigger text', 'font-size: 50px; background: pink;');
     // warning!
-
+    console.warn('LOOK OUT FOR BEARS!!!');
     // Error :|
-
+    console.error('Tits!!');
     // Info
-
+    console.info('Bears can smell the menstration.');
     // Testing
-
+    console.assert(2 === 3, 'Bears, beets, battlestar galactica.');
     // clearing
-
+    // console.clear()
     // Viewing DOM Elements
-
+    // nah
     // Grouping together
-
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.years} years old`);
+      console.groupEnd(`${dog.name}`);
+    })
     // counting
-
+    console.count('zach')
+    console.count('zach')
+    console.count('zach')
+    console.count('zach')
+    console.count('zach')
+    console.count('zach')
+    console.count('zach')
     // timing
-
+    console.time('running a loop');
+    for (let i = 0; i < 400000; i++){
+      if (i === 3999) console.timeEnd('running a loop');
+    }
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
