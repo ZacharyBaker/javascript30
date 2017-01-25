@@ -20,3 +20,6 @@ video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 
 toggle.addEventListener('click', togglePlay);
+
+
+//working on v2
