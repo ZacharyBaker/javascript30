@@ -15,11 +15,14 @@ function updateButton () {
 	toggle.textContent = icon;
 }
 
+function skip () {
+	console.log('skipping biotch')
+	video.currentTime += parseFloat(this.dataset.skip);
+}
+
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
-
 toggle.addEventListener('click', togglePlay);
+skipButtons.forEach(b => b.addEventListener('click', skip));
 
-
-//working on v2
