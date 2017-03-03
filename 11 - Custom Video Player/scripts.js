@@ -20,9 +20,14 @@ function skip () {
 	video.currentTime += parseFloat(this.dataset.skip);
 }
 
+function handleRangeUpdate() {
+	console.log(this.value)
+}
+
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(b => b.addEventListener('click', skip));
+ranges.forEach(r => r.addEventListener('click', handleRangeUpdate))
 
